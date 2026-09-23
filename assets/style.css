@@ -145,3 +145,7 @@ footer a { color: #9fd8d9; }
   .hero h1 { font-size: 2rem; }
   .hero-photo { max-width: 340px; }
 }
+
+/* two-column card grid (Research) */
+.card-grid.two { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 820px) { .card-grid.two { grid-template-columns: 1fr; } }
