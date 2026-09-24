@@ -8,13 +8,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<script src="assets/nav.js" defer></script>
 </head>
 <body>
 
 <nav class="nav">
   <div class="nav-inner">
     <a class="nav-brand" href="index.html">Nayeemuddin Ahmad</a>
-    <div class="nav-links">
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="work.html" class="active">Experience &amp; Projects</a>
