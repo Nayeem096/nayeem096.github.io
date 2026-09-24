@@ -175,15 +175,13 @@ footer a { color: #9fd8d9; }
     border-top: 1px solid rgba(255, 255, 255, 0.08);
   }
 
-  /* Stats strip: single column list */
-  .stats { grid-template-columns: 1fr; gap: 0; text-align: left; border-top: 1px solid var(--line); }
-  .stat {
-    display: grid; grid-template-columns: 6.2rem 1fr; align-items: center; column-gap: 1rem;
-    padding: 0.85rem 0; border-bottom: 1px solid var(--line);
-  }
-  .stat .num { font-size: 1.4rem; line-height: 1.2; }
-  .stat .lbl { font-size: 0.8rem; line-height: 1.4; }
+  /* Stats strip: stacked blocks, title above subtitle */
+  .stats { grid-template-columns: 1fr; gap: 1.6rem; text-align: left; }
+  .stat .num { font-size: 2rem; line-height: 1.2; }
+  .stat .lbl { font-size: 0.85rem; margin-top: 0.2rem; }
 
-  /* Hero photo: smaller on phones */
-  .hero-photo { max-width: 220px; }
+  /* Hero: less empty space under the header; balanced photo */
+  .hero { padding: 1.75rem 0 2.75rem; }
+  .hero-grid { gap: 2rem; }
+  .hero-photo { max-width: 300px; width: 100%; margin: 0 auto; }
 }
